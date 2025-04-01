@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="src/css/styles.css">
 </head>
 <body>
+    <!-- <aside>
+    </aside> -->
     <header id="header">
         <img src="assets/images/Dr.Rashad photo.jpg" alt="Dr. Rashad Mudhsh Ali" id="profile-photo">
         <div id="info">
@@ -34,6 +36,9 @@
                         <img src="assets/icons/phoneIcon.png" alt="phone icon">
                         <div class="info-item-text">+966534501778</div>
                     </div>
+                    <div class="info-item">
+                        <div class="info-item-text">- Married and have 4 beautiful children</div>
+                    </div>
                 </div>
                 <div>
                     <div class="info-item">
@@ -56,22 +61,69 @@
             </div>
         </div>
     </header>
-    <main>
-        <section>
-            <h2>About Dr. Rashad</h2>
-            <p>This section contains information about Dr. Rashad.</p>
-        </section>
-        <section>
-            <h2>Research Interests</h2>
-            <p>This section contains information about Dr. Rashad's research interests.</p>
-        </section>
-        <section>
-            <h2>Publications</h2>
-            <p>This section contains information about Dr. Rashad's publications.</p>
-        </section>
+    
+    <main class="content">
+        <section class="section-with-sidebar">
+        <aside class="sidebar"></aside>
+        <main class="section-content">
+            <div class="section-header">
+                <img src="assets/icons/academicIcon.png" alt="Scientific Degrees"> 
+                <h1>Scientific Degrees: </h1>
+            </div>
+        <div class="timeline">
+            <div class="timeline-container">
+                <div class="timeline-date">Jun. 2008</div>
+                <div class="timeline-content">
+                    Ph. D. in Mathematics from the Department of Mathematics, Faculty of Science, Cairo 
+                        University. The thesis is refereed by Professors Frank Stenger, USA, University of Utah Salt 
+                        Lake City and Gerhard Schmeisser, Germany, University of Erlangen-Nuremberg.
+                </div>
+            </div>
+            <div class="timeline-container">
+                <div class="timeline-date">Apr. 2004</div>
+                <div class="timeline-content">
+                    M. Sc. in Mathematics from the Department of Mathematics, Faculty of Science, Cairo 
+University. The Master thesis is refereed by Professors Antonio G. Garcia, Spain, University 
+Carlos III de Madrid, and Hassan M. El-Owaidy, Egypt, Al-Azhar University.
+                </div>
+            </div>
+            <div class="timeline-container">
+                <div class="timeline-date">Jul. 1995</div>
+                <div class="timeline-content">
+                    .S. in Mathematics, Department of Mathematics, Faculty of Education, Sana’a University, 
+Yemen and complete the courses of B.S., (1999), Department of Mathematics, Faculty of 
+Science, Sana’a University, Yemen. 
+                </div>
+            </div>
+        </div>
     </main>
-    <footer>
+    </section>
+    <section>
+        <h2>Hi mo</h2>
+    </section>
+        
+    </main>
+    <!-- <footer>
         <p>&copy; 2023 Dr. Rashad Asharabi Profile</p>
-    </footer>
+    </footer> -->
+<script>
+    // Add this script at the end of your body tag
+document.addEventListener('DOMContentLoaded', function() {
+    const timeline = document.querySelector('.timeline');
+    const containers = document.querySelectorAll('.timeline-container');
+    
+    if (containers.length > 0) {
+        // Get the last timeline container
+        const lastContainer = containers[containers.length - 1];
+        
+        // Calculate the position of the circle in the last container
+        const lastCirclePosition = lastContainer.offsetTop + 4; // 15px is where the circle is positioned
+        
+        // Set the height of the timeline line to reach exactly this point
+        timeline.style.setProperty('--timeline-height', `${lastCirclePosition}px`);
+    }
+});
+</script>
 </body>
+
 </html>
