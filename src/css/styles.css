@@ -6,40 +6,165 @@
 
 body {
     background-color: #e7f0f4;
+    font-family: Bahnschrift, Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Header Styles */
+#header {
+    background-color: #002C4A;
+    padding: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: center;
 }
 
 #profile-photo {
-    max-width:100%;
-    max-height:100%;
-    border: 12px solid rgb(231, 232, 233);
+    max-width: 220px;
+    height: auto;
+    border: 8px solid rgb(231, 232, 233);
+    object-fit: cover;
 }
 
-#header {
-    height: 28rem;
-    background-color: #002C4A;
-    padding: 1em;
-    display: flex;
+#info {
+    flex: 1;
+    min-width: 280px;
+    color: white;
 }
 
 #name {
-    padding: 0 4em;
-    color: white;
-    font-family: Bahnschrift, sans-serif;
+    padding: 0 0 1rem 0;
 }
+
 #full-name {
-    font-size: 3.5rem;
-    font-weight: 400;
-}
-#degree {
     font-size: 2.5rem;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+#degree {
+    font-size: 1.5rem;
     font-weight: 300;
+    margin-top: 0.5rem;
 }
-#info {
-    clear: both;
+
+#vertical-line-section {
+    border-left: 4px solid white;
+    padding-left: 1.5rem;
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
-#vertical-line {
-    /* clear: both; */
-    border-left: 5px solid white;
-    height: 70%;
-    margin: 0 2em;
+
+#vertical-line-section > div {
+    flex: 1;
+    min-width: 280px;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.info-item img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+
+.info-item-text {
+    margin-left: 1rem;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.4;
+    word-break: break-word;
+    text-align: left;
+}
+
+/* Main Content Styles */
+main {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section {
+    background-color: white;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #002C4A;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #e7f0f4;
+    padding-bottom: 0.5rem;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #002C4A;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    #header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #profile-photo {
+        max-width: 180px;
+    }
+
+    #vertical-line-section {
+        border-left: none;
+        border-top: 4px solid white;
+        padding: 1rem 0 0 0;
+        margin: 1rem 0 0 0;
+    }
+
+    #full-name {
+        font-size: 2rem;
+    }
+
+    #degree {
+        font-size: 1.2rem;
+    }
+    
+    .info-item {
+        justify-content: flex-start;
+    }
+    
+    #name {
+        padding: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    main {
+        padding: 1rem;
+    }
+
+    section {
+        padding: 1rem;
+    }
+
+    #full-name {
+        font-size: 1.8rem;
+    }
+
+    .info-item-text {
+        font-size: 0.9rem;
+    }
 }
