@@ -110,17 +110,19 @@ main.content {
     width: 250px;
     background-color: #dcdcdc;
     z-index: 0;
+    
 }
 
 
 /* Timeline date styles */
 .timeline-date {
     position: absolute;
-    top: 6px; /* Align with the circle */
-    left: -120px; /* Position to the left of the circle */
-    font-size: 1.5rem;
-    /* width: 80px; */
+    top: 9px; /* Align with the circle */
+    left: -110px; /* Position to the left of the circle */
+    font-size: 1.2rem;
+    max-width: 100px;
     text-align: left;
+    word-break: break-word;
 }
 .section-content {
     flex: 1;
@@ -179,22 +181,33 @@ main.content {
 .section-header {
     display: flex;
     align-items: center;
-    margin: 1rem;
+    margin: 2rem;
+    margin-top: 3rem;
     gap: 1rem;
-}
-.section-header h1 {
-    font-size: 2rem;
-    color: #002C4A;
-}
-.section-header img {
-    width: 70px;
-    height: 70px;
-    object-fit: contain;
-    background-color: #002C4A;
-    border-radius: 50%;
-    padding: 10px;
+    counter-reset: section;
 }
 
+.section-header-icon {
+    background-color: #002C4A;
+    border-radius: 50%;
+    padding: 20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.section-header-icon img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+.timeline-counter {
+    left: -50px;
+}
+.timeline-counter::before {
+    counter-increment: section;
+    content: counter(section) " - ";
+}
 /* Footer Styles */
 footer {
     background-color: #002C4A;
@@ -203,7 +216,28 @@ footer {
     padding: 1rem;
     margin-top: 2rem;
 }
-
+.highlighted-header {
+    background-color: #008a8a;
+    color: white;
+    display: inline-block;
+    margin-left: 40px;
+    padding: 0 3px;
+}
+.highlighted-text {
+    background-color: #008a8a;
+    color: white;
+    padding: 0 3px;
+    display: inline-block;
+}
+.timeline-subtext {
+    font-size: 1.2rem;
+    color:rgb(115, 124, 130);
+    margin-top: 0.5rem;
+    font-weight: 300;
+    line-height: 1.4;
+    word-break: break-word;
+    text-align: left;
+}
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
     #header {
@@ -238,15 +272,25 @@ footer {
     #name {
         padding: 0;
     }
+    .sidebar {
+        width: 180px;
+    }
+    .timeline-content {
+        text-align: left;
+    }
+    
 }
 
 @media (max-width: 480px) {
     
     .sidebar {
-        width: 130px;
+        width: 100px;
     }
     .timeline-date {
-     font-size: 1.2rem;
+     font-size: 0.9rem;
+     max-width: 80px;
+     left: -85px; /* Adjusted to fit smaller screens */
+     text-align: center;
     }
 
     #full-name {
@@ -255,5 +299,18 @@ footer {
 
     .info-item-text {
         font-size: 0.9rem;
+    }
+    .timeline-content {
+        font-size: 1.2rem;
+    }
+    .timeline-container {
+        padding: 10px 5px 10px 20px;
+    }
+    .section-header-icon {
+        padding: 10px;
+    }
+    .section-header-icon img {
+        width: 30px;
+        height: 30px;
     }
 }
