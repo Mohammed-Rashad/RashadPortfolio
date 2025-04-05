@@ -262,6 +262,23 @@ footer {
 p {
     font-size: 1.5rem;
 }
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 0rem;
+}
+.grid-item img {
+    max-width: 150px;
+    max-height: 110px;
+}
+.grid-item {
+    /* width: 120px; */
+    flex: 1 1 1;
+    text-align: center;
+    max-width: 230px;
+    margin: auto;
+}
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
     #header {
@@ -305,6 +322,9 @@ p {
     .section-header {
         font-size: 1rem;
     }
+    .section {
+        margin-left: 50px;
+    }
 }
 
 
@@ -346,4 +366,5 @@ p {
     .ul-item {
         font-size: 1rem;
     }
+    
 }
