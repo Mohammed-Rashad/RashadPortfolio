@@ -312,6 +312,21 @@ tbody tr:nth-child(odd){
 tbody tr:nth-child(even){
     background-color: #b4c6e7;
 }
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem;
+}
+.card {
+    background-color: #2e5496;
+    color: white;
+    padding: 1rem;
+    flex: 1 1 calc(33% - 1rem); /* Adjust the width as needed */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+}
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
     #header {
@@ -367,6 +382,13 @@ tbody tr:nth-child(even){
     tbody tr {
         font-size: inherit;
     }
+    .ul-item:before {
+        width: 20px;
+        height: 20px;
+    }
+    .custom-ul {
+        margin-left: 20px;
+    }
 }
 
 
@@ -416,5 +438,9 @@ tbody tr:nth-child(even){
     }
     tbody tr {
         font-size: 1.0rem;
+    }
+    .ul-item:before {
+        width: 15px;
+        height: 15px;
     }
 }
