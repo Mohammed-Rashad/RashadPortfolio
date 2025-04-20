@@ -8,56 +8,73 @@
 
     <title>Dad Profile</title>
     <link rel="stylesheet" href="src/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
     <!-- <aside>
     </aside> -->
-    <header id="header">
-        <img src="assets/images/Dr.Rashad photo.jpg" alt="Dr. Rashad Mudhsh Ali" id="profile-photo">
-        <div id="info">
-            <div id="name">
-                <div id="full-name">Rashad M. Asharabi</div>
-                <div id="degree">Full Professor (Mathematical Analysis)</div>
+    <header class="profile-header">
+        <div class="container header-content">
+            <div class="header-photo">
+                <img src="assets/images/Dr.Rashad photo-square.jpg" alt="Professor Rashad M. Asharabi"
+                    id="profile-photo">
             </div>
-            <div id="vertical-line-section">
-                <div>
-                    <div class="info-item">
-                        <img src="assets/icons/calendarIcon.png" alt="calendar icon">
-                        <div class="info-item-text">17-Dec-1974 <br>in Taiz, Yemen</div>
+            <div class="header-info">
+                <h1 class="full-name">Prof. Rashad M. Asharabi</h1>
+                <p class="degree">Full Professor (Mathematical Analysis)</p>
+                <p class="affiliation">Department of Mathematics, College of Arts & Sciences, Najran University, Saudi
+                    Arabia</p>
+
+                <div class="contact-details">
+                    <div class="contact-column">
+                        <div class="info-item">
+                            <i class="fas fa-calendar-alt fa-fw icon"></i>
+                            <span class="info-item-text">Born: 17-Dec-1974 in Taiz, Yemen</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-flag fa-fw icon"></i>
+                            <span class="info-item-text">Nationality: Yemeni</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-envelope fa-fw icon"></i>
+                            <div style="display:block">
+                                <div class="info-item-text"><a href="mailto:rmahezam@nu.edu.sa">rmahezam@nu.edu.sa</a>
+                                </div>
+                                <div class="info-item-text"><a
+                                        href="mailto:rashad1974@hotmail.com">rashad1974@hotmail.com</a></div>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <i class="fas fa-phone fa-fw icon"></i>
+                            <span class="info-item-text"><a href="tel:+966534501778">+966 53 450 1778</a></span>
+                        </div>
                     </div>
-                    <div class="info-item">
-                        <img src="assets/icons/locationIcon.png" alt="location icon">
-                        <div class="info-item-text">Department of Mathematics, Najran University, Saudi Arabia</div>
-                    </div>
-                    <div class="info-item">
-                        <img src="assets/icons/globeIcon.png" alt="nationality icon">
-                        <div class="info-item-text">Yemeni</div>
-                    </div>
-                    <div class="info-item">
-                        <img src="assets/icons/phoneIcon.png" alt="phone icon">
-                        <div class="info-item-text">+966534501778</div>
-                    </div>
-                    <div class="info-item">
-                        <div class="info-item-text">- Married and have 4 beautiful children</div>
-                    </div>
-                </div>
-                <div>
-                    <div class="info-item">
-                        <img src="assets/icons/mailIcon.png" alt="email icon">
-                        <div class="info-item-text">rmahezam@nu.edu.sa<br>rashad1974@hotmail.com</div>
-                    </div>
-                    <div class="info-item">
-                        <img src="assets/icons/orcidIcon.png" alt="ORCID icon">
-                        <div class="info-item-text">ORCID: https://orcid.org/0000-0002-6616-2008</div>
-                    </div>
-                    <div class="info-item">
-                        <img src="assets/icons/scopusIcon.png" alt="Scopus icon">
-                        <div class="info-item-text">Scopus ID: 25637203500</div>
-                    </div>
-                    <div class="info-item">
-                        <img src="assets/icons/researcherIcon.png" alt="Researcher icon">
-                        <div class="info-item-text">ResearcherID: S-2886-2017</div>
+                    <div class="contact-column">
+                        <div class="info-item">
+                            <i class="fab fa-orcid fa-fw icon"></i>
+                            <span class="info-item-text">ORCID: <a href="https://orcid.org/0000-0002-6616-2008"
+                                    target="_blank" rel="noopener noreferrer">0000-0002-6616-2008</a></span>
+                        </div>
+                        <div class="info-item">
+                            <img src="assets/icons/scopusIcon.png" alt="Scopus icon" class="custom-icon icon">
+                            <!-- Kept custom if needed -->
+                            <span class="info-item-text">Scopus ID: <a
+                                    href="https://www.scopus.com/authid/detail.uri?authorId=25637203500" target="_blank"
+                                    rel="noopener noreferrer">25637203500</a></span>
+                        </div>
+                        <div class="info-item">
+                            <img src="assets/icons/researcherIcon.png" alt="Researcher icon" class="custom-icon icon">
+                            <!-- Kept custom if needed -->
+                            <span class="info-item-text">ResearcherID: S-2886-2017</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-users fa-fw icon"></i>
+                            <span class="info-item-text">Married, 4 children</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -67,7 +84,7 @@
     <main class="content">
         <section class="section-with-sidebar">
             <aside class="sidebar"></aside>
-            <main class="section-content">
+            <div class="section-content">
                 <div class="section-header">
                     <div class="section-header-icon">
                         <img src="assets/icons/academicIcon.png" alt="Scientific Degrees">
@@ -105,14 +122,14 @@
 
                     </div>
                 </div>
-            </main>
+            </div>
         </section>
 
 
 
         <section class="section-with-sidebar">
             <aside class="sidebar"></aside>
-            <main class="section-content">
+            <div class="section-content">
                 <div class="section-header">
                     <div class="section-header-icon">
                         <img src="assets/icons/positionHeldIcon.png" alt="Positions Held Icon">
@@ -198,18 +215,19 @@
                         <br>
                     </div>
                 </div>
-            </main>
+            </div>
         </section>
 
         <section class="section-with-sidebar">
             <aside class="sidebar"></aside>
-            <main class="section-content">
+            <div class="section-content">
                 <div class="section-header">
                     <div class="section-header-icon">
                         <img src="assets/icons/publicationIcon.png" alt="List of Publications Icon">
                     </div>
                     <h1>List of Publications</h1>
                 </div>
+
                 <h2 class="highlighted-header">Under review</h2>
                 <div class="timeline">
 
@@ -248,429 +266,480 @@
                         </div>
                     </div>
                 </div>
-            </main>
+            </div>
         </section>
 
         <section class="section-with-sidebar">
             <aside class="sidebar"></aside>
-            <main class="section-content">
-                <div class="section-header"></div>
-                <h2 class="highlighted-header">2024</h2>
-                <div class="timeline">
+            <div class="section-content tab-system">
+                <div class="tab-bar">
+                    <button class="tab-btn active" data-tab="research-2024">2024</button>
+                    <button class="tab-btn" data-tab="research-2023">2023</button>
+                    <button class="tab-btn" data-tab="research-2022">2022</button>
+                    <button class="tab-btn" data-tab="research-2021">2021</button>
+                    <button class="tab-btn" data-tab="research-2020">2020</button>
+                    <button class="tab-btn" data-tab="research-2019">2019</button>
+                    <button class="tab-btn" data-tab="research-2018">2018</button>
+                    <button class="tab-btn" data-tab="research-2017">2017</button>
+                    <button class="tab-btn" data-tab="research-2016">2016</button>
+                    <button class="tab-btn" data-tab="research-2015">2015</button>
+                    <button class="tab-btn" data-tab="research-2014">2014</button>
+                    <button class="tab-btn" data-tab="research-2012">2012</button>
+                    <button class="tab-btn" data-tab="research-2011">2011</button>
+                    <button class="tab-btn" data-tab="research-2010">2010</button>
+                    <button class="tab-btn" data-tab="research-2008">2008</button>
+                </div>
+                <div class="tab-content-container">
+                    <div class="tab-content active" id="research-2024">
+                        <div class="section-header"></div>
+                        <h2 class="highlighted-header">2024</h2>
+                        <div class="timeline">
 
-                    <div class="timeline-container">
-                        <div class="timeline-date timeline-counter"></div>
-                        <div class="timeline-content">
-                            Accelerating the convergence of a two
-                            dimensional periodic nonuniform sampling series through the incorporation of
-                            a bivariate Gaussian multiplier.
-                            <!-- <div class="highlighted-text">ISI: Q1</div> -->
-                            <div class="timeline-subtext">R. M. Asharabi and S.M. Alhazmi</div>
-                            <div class="timeline-subtext"> AIMS Mathematics, 9, (2024), 30898-30921.</div>
-                        </div>
+                            <div class="timeline-container">
+                                <div class="timeline-date timeline-counter"></div>
+                                <div class="timeline-content">
+                                    Accelerating the convergence of a two
+                                    dimensional periodic nonuniform sampling series through the incorporation of
+                                    a bivariate Gaussian multiplier.
+                                    <!-- <div class="highlighted-text">ISI: Q1</div> -->
+                                    <div class="timeline-subtext">R. M. Asharabi and S.M. Alhazmi</div>
+                                    <div class="timeline-subtext"> AIMS Mathematics, 9, (2024), 30898-30921.</div>
+                                </div>
 
-                    </div>
-                    <div class="timeline-container">
-                        <div class="timeline-date timeline-counter"></div>
-                        <div class="timeline-content">
-                            A modification of the periodic nonuniform
-                            sampling involving derivatives with a Gaussian multiplier
+                            </div>
+                            <div class="timeline-container">
+                                <div class="timeline-date timeline-counter"></div>
+                                <div class="timeline-content">
+                                    A modification of the periodic nonuniform
+                                    sampling involving derivatives with a Gaussian multiplier
+                                </div>
+                                <div class="timeline-subtext">R.M. Asharabi, M.Q. Khirallah</div>
+                                <div class="timeline-subtext"> Calcolo, 61, (2024), 58.</div>
+                            </div>
+                            <div class="timeline-container">
+                                <div class="timeline-date timeline-counter"> </div>
+                                <div class="timeline-content">
+                                    Multivariate form of Hermite sampling series.
+                                </div>
+                                <div class="timeline-subtext">R.M. Asharabi</div>
+                                <div class="timeline-subtext">Applied
+                                    Mathematics-A Journal of Chinese Universities, 39, (2024), 253-265.</div>
+                            </div>
+                            <div class="timeline-container">
+                                <div class="timeline-date timeline-counter"> </div>
+                                <div class="timeline-content">
+                                    A multidimensional Hermite-Gauss sampling
+                                    formula for analytic functions of several variables.
+                                </div>
+                                <div class="timeline-subtext">R.M. Asharabi, F.H. Al-Haddad</div>
+                                <div class="timeline-subtext">Numerical Algorithms, 96,
+                                    (2024), 105-134.</div>
+                            </div>
+                            <div class="timeline-container">
+                                <div class="timeline-date timeline-counter"> </div>
+                                <div class="timeline-content">
+                                    Hyperstability for a Generalized Class of
+                                    Pexiderized Functional Equations on Monoids via Páles' Approach
+                                </div>
+                                <div class="timeline-subtext">R.M. Asharabi, M Almahalebi</div>
+                                <div class="timeline-subtext">Mathematics,12, , (2024), 838. </div>
+                            </div>
                         </div>
-                        <div class="timeline-subtext">R.M. Asharabi, M.Q. Khirallah</div>
-                        <div class="timeline-subtext"> Calcolo, 61, (2024), 58.</div>
                     </div>
-                    <div class="timeline-container">
-                        <div class="timeline-date timeline-counter"> </div>
-                        <div class="timeline-content">
-                            Multivariate form of Hermite sampling series.
+
+                    <div class="tab-content" id="research-2023">
+                        <div class="section-header"></div>
+                        <h2 class="highlighted-header">2023</h2>
+                        <div class="timeline">
+                            <div class="timeline-container">
+                                <div class="timeline-date timeline-counter"></div>
+                                <div class="timeline-content">
+                                    Multivariate form of Hermite sampling series
+                                </div>
+                                <div class="timeline-subtext">R. M. Asharabi</div>
+                                <div class="timeline-subtext">Appl. Math. J. Chinese Univ., (2023).</div>
+                            </div>
+                            <div class="timeline-container">
+                                <div class="timeline-date timeline-counter"></div>
+                                <div class="timeline-content">
+                                    Periodic nonuniform sinc-Gauss sampling
+                                </div>
+                                <div class="timeline-subtext">R. M. Asharabi</div>
+                                <div class="timeline-subtext">Filomat, (2023), 37, 279-292.</div>
+                            </div>
                         </div>
-                        <div class="timeline-subtext">R.M. Asharabi</div>
-                        <div class="timeline-subtext">Applied
-                            Mathematics-A Journal of Chinese Universities, 39, (2024), 253-265.</div>
                     </div>
-                    <div class="timeline-container">
-                        <div class="timeline-date timeline-counter"> </div>
-                        <div class="timeline-content">
-                            A multidimensional Hermite-Gauss sampling
-                            formula for analytic functions of several variables.
+                    <div class="tab-content" id="research-2022">
+                        <div class="section-header"></div>
+                        <h2 class="highlighted-header">2022</h2>
+                        <div class="timeline">
+                            <div class="timeline-container">
+                                <div class="timeline-date timeline-counter"></div>
+                                <div class="timeline-content">
+                                    On multidimensional sinc-Gauss sampling formulas for analytic functions
+                                </div>
+                                <div class="timeline-subtext">R. M. Asharabi, F. H. Al-Haddad</div>
+                                <div class="timeline-subtext">Electron. Trans. Numer. Anal. (2022) 55, 242-262.</div>
+                            </div>
                         </div>
-                        <div class="timeline-subtext">R.M. Asharabi, F.H. Al-Haddad</div>
-                        <div class="timeline-subtext">Numerical Algorithms, 96,
-                            (2024), 105-134.</div>
                     </div>
-                    <div class="timeline-container">
-                        <div class="timeline-date timeline-counter"> </div>
-                        <div class="timeline-content">
-                            Hyperstability for a Generalized Class of
-                            Pexiderized Functional Equations on Monoids via Páles' Approach
+                    <div class="tab-content" id="research-2021">
+                        <div class="section-header"></div>
+                        <h2 class="highlighted-header">2021</h2>
+                        <div class="timeline">
+                            <div class="timeline-container">
+                                <div class="timeline-date timeline-counter"></div>
+                                <div class="timeline-content">
+                                    An Overview of the Computation of the Eigenvalues Using Sinc-Methods
+                                </div>
+                                <div class="timeline-subtext">M.H. Annaby, R. M. Asharabi and M.M. Tharwat</div>
+                                <div class="timeline-subtext">New Sinc Methods of Numerical Analysis: Festschrift in
+                                    Honor
+                                    of
+                                    Frank Stenger's 80th Birthday, (2021), 255-298, Springer</div>
+                            </div>
+                            <div class="timeline-container">
+                                <div class="timeline-date timeline-counter"></div>
+                                <div class="timeline-content">
+                                    Sinc-Gaussian Approach for Solving the Inverse Heat Conduction Problem
+                                </div>
+                                <div class="timeline-subtext">M.H. Annaby, R. M. Asharabi</div>
+                                <div class="timeline-subtext">New Sinc Methods of Numerical Analysis: Festschrift in
+                                    Honor
+                                    of
+                                    Frank Stenger's 80th Birthday, (2021), 3-21, Springer</div>
+                            </div>
+                            <div class="timeline-container">
+                                <div class="timeline-date timeline-counter"></div>
+                                <div class="timeline-content">
+                                    Accurate sampling formula for approximating the partial derivatives of bivariate
+                                    analytic
+                                    functions
+                                </div>
+                                <div class="timeline-subtext">R. M. Asharabi and J. Prestin</div>
+                                <div class="timeline-subtext">Numer. Algorithm, (2021), 86, 1421-1441.</div>
+                            </div>
                         </div>
-                        <div class="timeline-subtext">R.M. Asharabi, M Almahalebi</div>
-                        <div class="timeline-subtext">Mathematics,12, , (2024), 838. </div>
+                    </div>
+                    <div class="tab-content" id="research-2020">
+                        <div class="section-header"></div>
+                        <h2 class="highlighted-header">2020</h2>
+                        <div class="timeline">
+                            <div class="timeline-container">
+                                <div class="timeline-date timeline-counter"></div>
+                                <div class="timeline-content">
+                                    Computing eigenpairs of two-parameter Sturm-Liouville systems using the bivariate
+                                    sinc-Gauss
+                                    formula
+                                </div>
+                                <div class="timeline-subtext">R. M. Asharabi and J. Prestin</div>
+                                <div class="timeline-subtext">Comm. Pure Appl. Anal., (2020), 19, 4143-4158.</div>
+                            </div>
+                            <div class="timeline-container">
+                                <div class="timeline-date timeline-counter"></div>
+                                <div class="timeline-content">
+                                    Error analysis for regularized multidimensional sampling expansions
+                                </div>
+                                <div class="timeline-subtext">R. M. Asharabi and F.M. Al-Abbas</div>
+                                <div class="timeline-subtext">Electron. Trans. Numer. Anal. (2020), 52, 320-341.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-content" id="research-2019">
+                        <div class="section-header"></div>
+                        <h2 class="highlighted-header">2019</h2>
+                        <div class="timeline">
+                            <div class="timeline-container">
+                                <div class="timeline-date timeline-counter"></div>
+                                <div class="timeline-content">
+                                    Generalized bivariate Hermite-Gauss sampling
+                                </div>
+                                <div class="timeline-subtext">R. M. Asharabi</div>
+                                <div class="timeline-subtext">Comput. Appl. Math., (2019), 38: 29
+                                    DOI:10.1007/s40314-019-0802-z
+                                </div>
+                            </div>
+                            <div class="timeline-container">
+                                <div class="timeline-date timeline-counter"></div>
+                                <div class="timeline-content">
+                                    Derivative sampling expansions for the linear canonical transform: convergence and
+                                    error
+                                    analysis
+                                </div>
+                                <div class="timeline-subtext">M.H. Annaby and R. M. Asharabi</div>
+                                <div class="timeline-subtext">J. Comput. Math., (2019) 37, 431-446.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-content" id="research-2018">
+                        <div class="section-header"></div>
+                        <h2 class="highlighted-header">2018</h2>
+                        <div class="timeline">
+                            <div class="timeline-container">
+                                <div class="timeline-date timeline-counter"></div>
+                                <div class="timeline-content">
+                                    Sinc-interpolants in the energy plane for regular solution, Jost function, and its
+                                    zeros
+                                    of
+                                    quantum scattering
+                                </div>
+                                <div class="timeline-subtext">M.H. Annaby and R. M. Asharabi</div>
+                                <div class="timeline-subtext">J. Math. Phys., (2018), 59, 013502.</div>
+                            </div>
+                            <div class="timeline-container">
+                                <div class="timeline-date timeline-counter"></div>
+                                <div class="timeline-content">
+                                    Double sampling series derivatives and bounds for the truncation error
+                                </div>
+                                <div class="timeline-subtext">R.M. Asharabi and A. Al-Hayzea</div>
+                                <div class="timeline-subtext">Appl. Math. J. Chinese Univ. (2018), 33, 209-224.</div>
+                            </div>
+                            <div class="timeline-container">
+                                <div class="timeline-date timeline-counter"></div>
+                                <div class="timeline-content">
+                                    A sinc-Gaussian solver for general second order discontinuous problems
+                                </div>
+                                <div class="timeline-subtext">M.H. Annaby and R. M. Asharabi</div>
+                                <div class="timeline-subtext">Japan J. Indust. Appl. Math., (2018) 35:653-668.</div>
+                            </div>
+                            <div class="timeline-container">
+                                <div class="timeline-date timeline-counter"></div>
+                                <div class="timeline-content">
+                                    The use of the generalized sinc-Gaussian sampling for numerically computing
+                                    eigenvalues
+                                    of
+                                    periodic Dirac system
+                                </div>
+                                <div class="timeline-subtext">R. M. Asharabi and M.M. Tharwat</div>
+                                <div class="timeline-subtext">Electron. Trans. Numer. Anal., (2018), 48, 373-386.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-content" id="research-2017">
+                        <div class="section-header"></div>
+                        <h2 class="highlighted-header">2017</h2>
+                        <div class="timeline">
+                            <div class="timeline-container">
+                                <div class="timeline-date timeline-counter"></div>
+                                <div class="timeline-content">
+                                    Approximating eigenvalues of Dirac system with discontinuities at several points
+                                    using
+                                    Hermite-Gauss method
+                                </div>
+                                <div class="timeline-subtext">R. M. Asharabi and M.M. Tharwat</div>
+                                <div class="timeline-subtext">Numer. Algorithms., (2017), 76, 655-673</div>
+                            </div>
+                            <div class="timeline-container">
+                                <div class="timeline-date timeline-counter"></div>
+                                <div class="timeline-content">
+                                    A bivariate sampling series involving mixed partial derivatives
+                                </div>
+                                <div class="timeline-subtext">R. M. Asharabi and H. Al-Haddad</div>
+                                <div class="timeline-subtext">Turk. J. Math., (2017), 41, 387-403.</div>
+                            </div>
+                            <div class="timeline-container">
+                                <div class="timeline-date timeline-counter"></div>
+                                <div class="timeline-content">
+                                    Truncation error estimates for generalized Hermite sampling
+                                </div>
+                                <div class="timeline-subtext">R. M. Asharabi and H. S. Al-Abbas</div>
+                                <div class="timeline-subtext">Numer. Algor., (2017),74, 481-497.</div>
+                            </div>
+                            <div class="timeline-container">
+                                <div class="timeline-date timeline-counter"></div>
+                                <div class="timeline-content">
+                                    Multiband sampling theorems for Mittag-Leffler transforms bandlimited on rays
+                                </div>
+                                <div class="timeline-subtext">M.H. Annaby and R. M. Asharabi</div>
+                                <div class="timeline-subtext">Integral Transforms Spec. Funct., (2017), 28, 732-750.
+                                </div>
+                            </div>
+                            <div class="timeline-container">
+                                <div class="timeline-date timeline-counter"></div>
+                                <div class="timeline-content">
+                                    Approximating eigenvalues of boundary value problems by using the Hermite-Gauss
+                                    sampling
+                                    method
+                                </div>
+                                <div class="timeline-subtext">R. M. Asharabi</div>
+                                <div class="timeline-subtext">Electron. Trans. Numer. Anal., (2017), 46, 359-374</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-content" id="research-2016">
+                        <div class="section-header"></div>
+                        <h2 class="highlighted-header">2016</h2>
+                        <div class="timeline">
+                            <div class="timeline-container">
+                                <div class="timeline-date timeline-counter"></div>
+                                <div class="timeline-content">
+                                    generalized sinc-Gaussian sampling involving derivatives
+                                </div>
+                                <div class="timeline-subtext">R. M. Asharabi</div>
+                                <div class="timeline-subtext">Numer. Algorithms, (2016), 73, 1055-1072</div>
+                            </div>
+                            <div class="timeline-container">
+                                <div class="timeline-date timeline-counter"></div>
+                                <div class="timeline-content">
+                                    Bounds for truncation and perturbation errors of a nonuniform sampling series
+                                </div>
+                                <div class="timeline-subtext">M.H. Annaby and R. M. Asharabi</div>
+                                <div class="timeline-subtext">BIT Numer. Math. (2016), 56, 807-832.</div>
+                            </div>
+                            <div class="timeline-container">
+                                <div class="timeline-date timeline-counter"></div>
+                                <div class="timeline-content">
+                                    On two-dimensional classical and Hermite sampling
+                                </div>
+                                <div class="timeline-subtext">R. M. Asharabi and J. Prestin</div>
+                                <div class="timeline-subtext">IMA J. Numer. Anal. (2016). 36, 851-871.</div>
+                            </div>
+                            <div class="timeline-container">
+                                <div class="timeline-date timeline-counter"></div>
+                                <div class="timeline-content">
+                                    A Hermite-Gauss method for the approximation of eigenvalues of regular
+                                    Sturm-Liouville
+                                    problems
+                                </div>
+                                <div class="timeline-subtext">R. M. Asharabi</div>
+                                <div class="timeline-subtext">J. Inequal. Appl. 2016, (2016), 154. doi:
+                                    10.1186/s13660-016-1098-9</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-content" id="research-2015">
+                        <div class="section-header"></div>
+                        <h2 class="highlighted-header">2015</h2>
+                        <div class="timeline">
+                            <div class="timeline-container">
+                                <div class="timeline-date timeline-counter"></div>
+                                <div class="timeline-content">
+                                    A modification of Hermite sampling with a Gaussian multiplier
+                                </div>
+                                <div class="timeline-subtext">R. M. Asharabi and J. Prestin</div>
+                                <div class="timeline-subtext">Numer. Funct. Anal. Optim. 36, (2015), 419-437.</div>
+                            </div>
+                            <div class="timeline-container">
+                                <div class="timeline-date timeline-counter"></div>
+                                <div class="timeline-content">
+                                    Error estimates associated with sampling series of the linear canonical transforms
+                                </div>
+                                <div class="timeline-subtext">M.H. Annaby and R. M. Asharabi</div>
+                                <div class="timeline-subtext">IMA J. Numer. Anal. 35, (2015), 931-946.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-content" id="research-2014">
+                        <div class="section-header"></div>
+                        <h2 class="highlighted-header">2014</h2>
+                        <div class="timeline">
+                            <div class="timeline-container">
+                                <div class="timeline-date timeline-counter"></div>
+                                <div class="timeline-content">
+                                    Aliasing error for sampling series derivatives
+                                </div>
+                                <div class="timeline-subtext">R. M. Asharabi</div>
+                                <div class="timeline-subtext">Sampl. Theory Signal Image Process. 13 (2014), 1-20.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-content" id="research-2012">
+                        <div class="section-header"></div>
+                        <h2 class="highlighted-header">2012</h2>
+                        <div class="timeline">
+                            <div class="timeline-container">
+                                <div class="timeline-date timeline-counter"></div>
+                                <div class="timeline-content">
+                                    Computing eigenvalues of Sturm-Liouville problems by Hermite interpolations
+                                </div>
+                                <div class="timeline-subtext">M.H. Annaby and R. M. Asharabi</div>
+                                <div class="timeline-subtext">Numer. Algorithms, 60 (2012), no. 3, 355-367.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-content" id="research-2011">
+                        <div class="section-header"></div>
+                        <h2 class="highlighted-header">2011</h2>
+                        <div class="timeline">
+                            <div class="timeline-container">
+                                <div class="timeline-date timeline-counter"></div>
+                                <div class="timeline-content">
+                                    Exact evaluations of trigonometric sums by sampling theorems
+                                </div>
+                                <div class="timeline-subtext">M.H. Annaby and R. M. Asharabi</div>
+                                <div class="timeline-subtext">Acta Mathematica Scientia, 31B, (2011), No.2, 408-418.
+                                </div>
+                            </div>
+                            <div class="timeline-container">
+                                <div class="timeline-date timeline-counter"></div>
+                                <div class="timeline-content">
+                                    Truncation, amplitude, and jitter errors on R for sampling series derivatives
+                                </div>
+                                <div class="timeline-subtext">M.H. Annaby and R. M. Asharabi</div>
+                                <div class="timeline-subtext">J.Aprox. Theory, 163, (2011), 336-362.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-content" id="research-2010">
+                        <div class="section-header"></div>
+                        <h2 class="highlighted-header">2010</h2>
+                        <div class="timeline">
+                            <div class="timeline-container">
+                                <div class="timeline-date timeline-counter"></div>
+                                <div class="timeline-content">
+                                    Error analysis associated with uniform Hermite interpolations of band limited
+                                    functions
+                                </div>
+                                <div class="timeline-subtext">M.H. Annaby and R. M. Asharabi</div>
+                                <div class="timeline-subtext">J. Korean Math. Soc. 47 (2010), No.6, 1299-1316.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-content" id="research-2008">
+                        <div class="section-header"></div>
+                        <h2 class="highlighted-header">2008</h2>
+                        <div class="timeline">
+                            <div class="timeline-container">
+                                <div class="timeline-date timeline-counter"></div>
+                                <div class="timeline-content">
+                                    Approximating eigenvalues of discontinuous problems by sampling theorems
+                                </div>
+                                <div class="timeline-subtext">M.H. Annaby and R. M. Asharabi</div>
+                                <div class="timeline-subtext">J. Numer. Math. 16 (2008), no. 3, 163-183.</div>
+                            </div>
+                            <div class="timeline-container">
+                                <div class="timeline-date timeline-counter"></div>
+                                <div class="timeline-content">
+                                    Computing eigenvalues of boundary-value problems using sinc-Gaussian method
+                                </div>
+                                <div class="timeline-subtext">M.H. Annaby and R. M. Asharabi</div>
+                                <div class="timeline-subtext">Sampl. Theory Signal Image Process. 7 (2008), no. 3,
+                                    293-311.
+                                </div>
+                            </div>
+                            <div class="timeline-container">
+                                <div class="timeline-date timeline-counter"></div>
+                                <div class="timeline-content">
+                                    On sinc-based method in computing eigenvalues of boundary-value problems
+                                </div>
+                                <div class="timeline-subtext">M.H. Annaby and R. M. Asharabi</div>
+                                <div class="timeline-subtext">SIAM J. Numer. Anal. 46 (2008), no. 2, 671-690.</div>
+                            </div>
+                            <div class="timeline-container">
+                                <div class="timeline-date timeline-counter"></div>
+                                <div class="timeline-content">
+                                    Spectral and sampling theorems
+                                </div>
+                                <div class="timeline-subtext">M. H. Abu-Risha, M.H. Annaby and R. M. Asharabi</div>
+                                <div class="timeline-subtext">Sampl. Theory Signal Image Process. 2 (2008), 145-164.
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </main>
+            </div>
         </section>
-        <section class="section-with-sidebar">
-            <aside class="sidebar"></aside>
-            <main class="section-content">
-                <div class="section-header"></div>
-                <div class="section-header"></div>
-                <h2 class="highlighted-header">2023</h2>
-                <div class="timeline">
-                    <div class="timeline-container">
-                        <div class="timeline-date timeline-counter"></div>
-                        <div class="timeline-content">
-                            Multivariate form of Hermite sampling series
-                        </div>
-                        <div class="timeline-subtext">R. M. Asharabi</div>
-                        <div class="timeline-subtext">Appl. Math. J. Chinese Univ., (2023).</div>
-                    </div>
-                    <div class="timeline-container">
-                        <div class="timeline-date timeline-counter"></div>
-                        <div class="timeline-content">
-                            Periodic nonuniform sinc-Gauss sampling
-                        </div>
-                        <div class="timeline-subtext">R. M. Asharabi</div>
-                        <div class="timeline-subtext">Filomat, (2023), 37, 279-292.</div>
-                    </div>
-                </div>
-
-                <div class="section-header"></div>
-                <h2 class="highlighted-header">2022</h2>
-                <div class="timeline">
-                    <div class="timeline-container">
-                        <div class="timeline-date timeline-counter"></div>
-                        <div class="timeline-content">
-                            On multidimensional sinc-Gauss sampling formulas for analytic functions
-                        </div>
-                        <div class="timeline-subtext">R. M. Asharabi, F. H. Al-Haddad</div>
-                        <div class="timeline-subtext">Electron. Trans. Numer. Anal. (2022) 55, 242-262.</div>
-                    </div>
-                </div>
-
-                <div class="section-header"></div>
-                <h2 class="highlighted-header">2021</h2>
-                <div class="timeline">
-                    <div class="timeline-container">
-                        <div class="timeline-date timeline-counter"></div>
-                        <div class="timeline-content">
-                            An Overview of the Computation of the Eigenvalues Using Sinc-Methods
-                        </div>
-                        <div class="timeline-subtext">M.H. Annaby, R. M. Asharabi and M.M. Tharwat</div>
-                        <div class="timeline-subtext">New Sinc Methods of Numerical Analysis: Festschrift in Honor of
-                            Frank Stenger's 80th Birthday, (2021), 255-298, Springer</div>
-                    </div>
-                    <div class="timeline-container">
-                        <div class="timeline-date timeline-counter"></div>
-                        <div class="timeline-content">
-                            Sinc-Gaussian Approach for Solving the Inverse Heat Conduction Problem
-                        </div>
-                        <div class="timeline-subtext">M.H. Annaby, R. M. Asharabi</div>
-                        <div class="timeline-subtext">New Sinc Methods of Numerical Analysis: Festschrift in Honor of
-                            Frank Stenger's 80th Birthday, (2021), 3-21, Springer</div>
-                    </div>
-                    <div class="timeline-container">
-                        <div class="timeline-date timeline-counter"></div>
-                        <div class="timeline-content">
-                            Accurate sampling formula for approximating the partial derivatives of bivariate analytic
-                            functions
-                        </div>
-                        <div class="timeline-subtext">R. M. Asharabi and J. Prestin</div>
-                        <div class="timeline-subtext">Numer. Algorithm, (2021), 86, 1421-1441.</div>
-                    </div>
-                </div>
-
-                <div class="section-header"></div>
-                <h2 class="highlighted-header">2020</h2>
-                <div class="timeline">
-                    <div class="timeline-container">
-                        <div class="timeline-date timeline-counter"></div>
-                        <div class="timeline-content">
-                            Computing eigenpairs of two-parameter Sturm-Liouville systems using the bivariate sinc-Gauss
-                            formula
-                        </div>
-                        <div class="timeline-subtext">R. M. Asharabi and J. Prestin</div>
-                        <div class="timeline-subtext">Comm. Pure Appl. Anal., (2020), 19, 4143-4158.</div>
-                    </div>
-                    <div class="timeline-container">
-                        <div class="timeline-date timeline-counter"></div>
-                        <div class="timeline-content">
-                            Error analysis for regularized multidimensional sampling expansions
-                        </div>
-                        <div class="timeline-subtext">R. M. Asharabi and F.M. Al-Abbas</div>
-                        <div class="timeline-subtext">Electron. Trans. Numer. Anal. (2020), 52, 320-341.</div>
-                    </div>
-                </div>
-
-                <div class="section-header"></div>
-                <h2 class="highlighted-header">2019</h2>
-                <div class="timeline">
-                    <div class="timeline-container">
-                        <div class="timeline-date timeline-counter"></div>
-                        <div class="timeline-content">
-                            Generalized bivariate Hermite-Gauss sampling
-                        </div>
-                        <div class="timeline-subtext">R. M. Asharabi</div>
-                        <div class="timeline-subtext">Comput. Appl. Math., (2019), 38: 29 DOI:10.1007/s40314-019-0802-z
-                        </div>
-                    </div>
-                    <div class="timeline-container">
-                        <div class="timeline-date timeline-counter"></div>
-                        <div class="timeline-content">
-                            Derivative sampling expansions for the linear canonical transform: convergence and error
-                            analysis
-                        </div>
-                        <div class="timeline-subtext">M.H. Annaby and R. M. Asharabi</div>
-                        <div class="timeline-subtext">J. Comput. Math., (2019) 37, 431-446.</div>
-                    </div>
-                </div>
-
-                <div class="section-header"></div>
-                <h2 class="highlighted-header">2018</h2>
-                <div class="timeline">
-                    <div class="timeline-container">
-                        <div class="timeline-date timeline-counter"></div>
-                        <div class="timeline-content">
-                            Sinc-interpolants in the energy plane for regular solution, Jost function, and its zeros of
-                            quantum scattering
-                        </div>
-                        <div class="timeline-subtext">M.H. Annaby and R. M. Asharabi</div>
-                        <div class="timeline-subtext">J. Math. Phys., (2018), 59, 013502.</div>
-                    </div>
-                    <div class="timeline-container">
-                        <div class="timeline-date timeline-counter"></div>
-                        <div class="timeline-content">
-                            Double sampling series derivatives and bounds for the truncation error
-                        </div>
-                        <div class="timeline-subtext">R.M. Asharabi and A. Al-Hayzea</div>
-                        <div class="timeline-subtext">Appl. Math. J. Chinese Univ. (2018), 33, 209-224.</div>
-                    </div>
-                    <div class="timeline-container">
-                        <div class="timeline-date timeline-counter"></div>
-                        <div class="timeline-content">
-                            A sinc-Gaussian solver for general second order discontinuous problems
-                        </div>
-                        <div class="timeline-subtext">M.H. Annaby and R. M. Asharabi</div>
-                        <div class="timeline-subtext">Japan J. Indust. Appl. Math., (2018) 35:653-668.</div>
-                    </div>
-                    <div class="timeline-container">
-                        <div class="timeline-date timeline-counter"></div>
-                        <div class="timeline-content">
-                            The use of the generalized sinc-Gaussian sampling for numerically computing eigenvalues of
-                            periodic Dirac system
-                        </div>
-                        <div class="timeline-subtext">R. M. Asharabi and M.M. Tharwat</div>
-                        <div class="timeline-subtext">Electron. Trans. Numer. Anal., (2018), 48, 373-386.</div>
-                    </div>
-                </div>
-
-                <div class="section-header"></div>
-                <h2 class="highlighted-header">2017</h2>
-                <div class="timeline">
-                    <div class="timeline-container">
-                        <div class="timeline-date timeline-counter"></div>
-                        <div class="timeline-content">
-                            Approximating eigenvalues of Dirac system with discontinuities at several points using
-                            Hermite-Gauss method
-                        </div>
-                        <div class="timeline-subtext">R. M. Asharabi and M.M. Tharwat</div>
-                        <div class="timeline-subtext">Numer. Algorithms., (2017), 76, 655-673</div>
-                    </div>
-                    <div class="timeline-container">
-                        <div class="timeline-date timeline-counter"></div>
-                        <div class="timeline-content">
-                            A bivariate sampling series involving mixed partial derivatives
-                        </div>
-                        <div class="timeline-subtext">R. M. Asharabi and H. Al-Haddad</div>
-                        <div class="timeline-subtext">Turk. J. Math., (2017), 41, 387-403.</div>
-                    </div>
-                    <div class="timeline-container">
-                        <div class="timeline-date timeline-counter"></div>
-                        <div class="timeline-content">
-                            Truncation error estimates for generalized Hermite sampling
-                        </div>
-                        <div class="timeline-subtext">R. M. Asharabi and H. S. Al-Abbas</div>
-                        <div class="timeline-subtext">Numer. Algor., (2017),74, 481-497.</div>
-                    </div>
-                    <div class="timeline-container">
-                        <div class="timeline-date timeline-counter"></div>
-                        <div class="timeline-content">
-                            Multiband sampling theorems for Mittag-Leffler transforms bandlimited on rays
-                        </div>
-                        <div class="timeline-subtext">M.H. Annaby and R. M. Asharabi</div>
-                        <div class="timeline-subtext">Integral Transforms Spec. Funct., (2017), 28, 732-750.</div>
-                    </div>
-                    <div class="timeline-container">
-                        <div class="timeline-date timeline-counter"></div>
-                        <div class="timeline-content">
-                            Approximating eigenvalues of boundary value problems by using the Hermite-Gauss sampling
-                            method
-                        </div>
-                        <div class="timeline-subtext">R. M. Asharabi</div>
-                        <div class="timeline-subtext">Electron. Trans. Numer. Anal., (2017), 46, 359-374</div>
-                    </div>
-                </div>
-
-                <div class="section-header"></div>
-                <h2 class="highlighted-header">2016</h2>
-                <div class="timeline">
-                    <div class="timeline-container">
-                        <div class="timeline-date timeline-counter"></div>
-                        <div class="timeline-content">
-                            generalized sinc-Gaussian sampling involving derivatives
-                        </div>
-                        <div class="timeline-subtext">R. M. Asharabi</div>
-                        <div class="timeline-subtext">Numer. Algorithms, (2016), 73, 1055-1072</div>
-                    </div>
-                    <div class="timeline-container">
-                        <div class="timeline-date timeline-counter"></div>
-                        <div class="timeline-content">
-                            Bounds for truncation and perturbation errors of a nonuniform sampling series
-                        </div>
-                        <div class="timeline-subtext">M.H. Annaby and R. M. Asharabi</div>
-                        <div class="timeline-subtext">BIT Numer. Math. (2016), 56, 807-832.</div>
-                    </div>
-                    <div class="timeline-container">
-                        <div class="timeline-date timeline-counter"></div>
-                        <div class="timeline-content">
-                            On two-dimensional classical and Hermite sampling
-                        </div>
-                        <div class="timeline-subtext">R. M. Asharabi and J. Prestin</div>
-                        <div class="timeline-subtext">IMA J. Numer. Anal. (2016). 36, 851-871.</div>
-                    </div>
-                    <div class="timeline-container">
-                        <div class="timeline-date timeline-counter"></div>
-                        <div class="timeline-content">
-                            A Hermite-Gauss method for the approximation of eigenvalues of regular Sturm-Liouville
-                            problems
-                        </div>
-                        <div class="timeline-subtext">R. M. Asharabi</div>
-                        <div class="timeline-subtext">J. Inequal. Appl. 2016, (2016), 154. doi:
-                            10.1186/s13660-016-1098-9</div>
-                    </div>
-                </div>
-
-                <div class="section-header"></div>
-                <h2 class="highlighted-header">2015</h2>
-                <div class="timeline">
-                    <div class="timeline-container">
-                        <div class="timeline-date timeline-counter"></div>
-                        <div class="timeline-content">
-                            A modification of Hermite sampling with a Gaussian multiplier
-                        </div>
-                        <div class="timeline-subtext">R. M. Asharabi and J. Prestin</div>
-                        <div class="timeline-subtext">Numer. Funct. Anal. Optim. 36, (2015), 419-437.</div>
-                    </div>
-                    <div class="timeline-container">
-                        <div class="timeline-date timeline-counter"></div>
-                        <div class="timeline-content">
-                            Error estimates associated with sampling series of the linear canonical transforms
-                        </div>
-                        <div class="timeline-subtext">M.H. Annaby and R. M. Asharabi</div>
-                        <div class="timeline-subtext">IMA J. Numer. Anal. 35, (2015), 931-946.</div>
-                    </div>
-                </div>
-
-                <div class="section-header"></div>
-                <h2 class="highlighted-header">2014</h2>
-                <div class="timeline">
-                    <div class="timeline-container">
-                        <div class="timeline-date timeline-counter"></div>
-                        <div class="timeline-content">
-                            Aliasing error for sampling series derivatives
-                        </div>
-                        <div class="timeline-subtext">R. M. Asharabi</div>
-                        <div class="timeline-subtext">Sampl. Theory Signal Image Process. 13 (2014), 1-20.</div>
-                    </div>
-                </div>
-
-                <div class="section-header"></div>
-                <h2 class="highlighted-header">2012</h2>
-                <div class="timeline">
-                    <div class="timeline-container">
-                        <div class="timeline-date timeline-counter"></div>
-                        <div class="timeline-content">
-                            Computing eigenvalues of Sturm-Liouville problems by Hermite interpolations
-                        </div>
-                        <div class="timeline-subtext">M.H. Annaby and R. M. Asharabi</div>
-                        <div class="timeline-subtext">Numer. Algorithms, 60 (2012), no. 3, 355-367.</div>
-                    </div>
-                </div>
-
-                <div class="section-header"></div>
-                <h2 class="highlighted-header">2011</h2>
-                <div class="timeline">
-                    <div class="timeline-container">
-                        <div class="timeline-date timeline-counter"></div>
-                        <div class="timeline-content">
-                            Exact evaluations of trigonometric sums by sampling theorems
-                        </div>
-                        <div class="timeline-subtext">M.H. Annaby and R. M. Asharabi</div>
-                        <div class="timeline-subtext">Acta Mathematica Scientia, 31B, (2011), No.2, 408-418.</div>
-                    </div>
-                    <div class="timeline-container">
-                        <div class="timeline-date timeline-counter"></div>
-                        <div class="timeline-content">
-                            Truncation, amplitude, and jitter errors on R for sampling series derivatives
-                        </div>
-                        <div class="timeline-subtext">M.H. Annaby and R. M. Asharabi</div>
-                        <div class="timeline-subtext">J.Aprox. Theory, 163, (2011), 336-362.</div>
-                    </div>
-                </div>
-
-                <div class="section-header"></div>
-                <h2 class="highlighted-header">2010</h2>
-                <div class="timeline">
-                    <div class="timeline-container">
-                        <div class="timeline-date timeline-counter"></div>
-                        <div class="timeline-content">
-                            Error analysis associated with uniform Hermite interpolations of band limited functions
-                        </div>
-                        <div class="timeline-subtext">M.H. Annaby and R. M. Asharabi</div>
-                        <div class="timeline-subtext">J. Korean Math. Soc. 47 (2010), No.6, 1299-1316.</div>
-                    </div>
-                </div>
-
-                <div class="section-header"></div>
-                <h2 class="highlighted-header">2008</h2>
-                <div class="timeline">
-                    <div class="timeline-container">
-                        <div class="timeline-date timeline-counter"></div>
-                        <div class="timeline-content">
-                            Approximating eigenvalues of discontinuous problems by sampling theorems
-                        </div>
-                        <div class="timeline-subtext">M.H. Annaby and R. M. Asharabi</div>
-                        <div class="timeline-subtext">J. Numer. Math. 16 (2008), no. 3, 163-183.</div>
-                    </div>
-                    <div class="timeline-container">
-                        <div class="timeline-date timeline-counter"></div>
-                        <div class="timeline-content">
-                            Computing eigenvalues of boundary-value problems using sinc-Gaussian method
-                        </div>
-                        <div class="timeline-subtext">M.H. Annaby and R. M. Asharabi</div>
-                        <div class="timeline-subtext">Sampl. Theory Signal Image Process. 7 (2008), no. 3, 293-311.
-                        </div>
-                    </div>
-                    <div class="timeline-container">
-                        <div class="timeline-date timeline-counter"></div>
-                        <div class="timeline-content">
-                            On sinc-based method in computing eigenvalues of boundary-value problems
-                        </div>
-                        <div class="timeline-subtext">M.H. Annaby and R. M. Asharabi</div>
-                        <div class="timeline-subtext">SIAM J. Numer. Anal. 46 (2008), no. 2, 671-690.</div>
-                    </div>
-                    <div class="timeline-container">
-                        <div class="timeline-date timeline-counter"></div>
-                        <div class="timeline-content">
-                            Spectral and sampling theorems
-                        </div>
-                        <div class="timeline-subtext">M. H. Abu-Risha, M.H. Annaby and R. M. Asharabi</div>
-                        <div class="timeline-subtext">Sampl. Theory Signal Image Process. 2 (2008), 145-164.</div>
-                    </div>
-                </div>
-            </main>
-        </section>
-        <section class="section">
+        <!-- <section class="section">
             <main class="section-content">
                 <div class="section-header">
                     <div class="section-header-icon">
@@ -693,86 +762,94 @@
                 </div>
 
             </main>
+        </section> -->
+        <section id="research-interests" class="section">
+            <div class="content-section">
+                <div class="section-header">
+                    <div class="section-header-icon">
+                        <img src="assets/icons/researchInterestIcon.png" alt="Scientific Degrees">
+                    </div>
+                    <h1>Research Interests:</h1>
+                </div>
+
+                <ul class="interest-list">
+                    <li>Sampling Theory</li>
+                    <li>Sinc Methods</li>
+                    <li>Error analysis associated with sampling series</li>
+                    <li>Computing eigenvalues of boundary value problems</li>
+                    <li>Trigonometric sums</li>
+                    <li>Accelerating the convergence of sampling series</li>
+                </ul>
+            </div>
         </section>
-        <section class="section">
-            <main class="section-content">
+        <section id="editorial-experience" class="section">
+            <div class="content-section">
                 <div class="section-header">
                     <div class="section-header-icon">
                         <img src="assets/icons/editorialExperienceIcon.png" alt="Editorial Experience">
                     </div>
                     <h1>Editorial Experience:</h1>
                 </div>
-                <div style="display:flex">
-                    <p>I am working as an academic editor at: Mathematical Problems in Engineering, Hindawi</p>
+                <div class="flex-center">
                     <img style="width: 80px; height:80px" src="assets/images/hindawiLogo.png" alt="Hindawi logo">
+                    <p>I am working as an academic editor at: Mathematical Problems in Engineering, Hindawi</p>
+
                 </div>
-            </main>
+            </div>
         </section>
 
 
-        <section class="section">
-            <main class="section-content">
+
+        <section id="referee" class="section">
+            <div class="content-section">
+                <!-- <main class="content-section"> -->
                 <div class="section-header">
                     <div class="section-header-icon">
                         <img src="assets/icons/refereeIcon.png" alt="Editorial Experience">
                     </div>
                     <h1>Referee Experience:</h1>
                 </div>
-                <p>I have worked at these journals as a referee.</p>
+                <p>Served as a referee for numerous international journals, including:</p>
                 <br>
-                <div class="grid">
-                    <div class="grid-item">
-                        <img src="assets/images/AMS.png" alt="Mathematical Reviews AMS logo">
-                        <p>Mathematical Reviews, AMS</p>
+                <div class="logo-grid">
+                    <div class="logo-item"><img src="assets/images/AMS.png" alt="Mathematical Reviews AMS logo">
+                        <p>Mathematical Reviews (AMS)</p>
                     </div>
-                    <div class="grid-item">
-                        <img src="assets/images/zbMathLogo.png" alt="zbMATH logo">
-                        <p>zbMath</p>
+                    <div class="logo-item"><img src="assets/images/zbMathLogo.png" alt="zbMATH logo">
+                        <p>zbMATH</p>
                     </div>
-                    <div class="grid-item">
-                        <img src="assets/images/ELSEVIERLogo.png" alt="ELSEVIER logo">
-                        <p>Applied Mathematics and
-                            Computation, Elsevier</p>
+                    <div class="logo-item"><img src="assets/images/ELSEVIERLogo.png" alt="ELSEVIER logo">
+                        <p>Applied Mathematics and Computation</p>
                     </div>
-                    <div class="grid-item">
-                        <img src="assets/images/SpringerLogo.png" alt="Springer Logo">
-                        <p>Boundary Value Problems, Springer</p>
+                    <div class="logo-item"><img src="assets/images/SpringerLogo.png" alt="Springer Logo">
+                        <p>Boundary Value Problems</p>
                     </div>
-                    <div class="grid-item">
-                        <img src="assets/images/STSIPLogo.png" alt="STSIP Logo">
-                        <p>Sampling Theory in Signal and Image Processing </p>
+                    <div class="logo-item"><img src="assets/images/STSIPLogo.png" alt="STSIP Logo">
+                        <p>Sampling Theory, Signal Processing, and Data Analysis (STSIPDA)</p>
+                    </div><!-- Updated Name -->
+                    <div class="logo-item"><img src="assets/images/SpringerLogo.png" alt="Springer Logo">
+                        <p>Annals of Functional Analysis</p>
                     </div>
-                    <div class="grid-item">
-                        <img src="assets/images/ELSEVIERLogo.png" alt="Springer Logo">
-                        <p>Annals of functional analysis, Springer </p>
+                    <div class="logo-item"><img src="assets/images/Filomat.png" alt="Filomat Logo">
+                        <p>Filomat</p>
                     </div>
-                    <div class="grid-item">
-                        <img src="assets/images/Filomat.png" alt="Filomat Logo">
-                        <p>Filomat </p>
+                    <div class="logo-item"><img src="assets/images/hindawiLogo.png" alt="Hindawi Logo">
+                        <p>Mathematical Problems in Engineering</p>
                     </div>
-                    <div class="grid-item">
-                        <img src="assets/images/hindawiLogo.png" alt="Hindawi Logo">
-                        <p>Mathematical Problems in Engineering, Hindawi </p>
+                    <div class="logo-item"><img src="assets/images/ELSEVIERLogo.png" alt="Elsevier Logo">
+                        <p>Journal of Approximation Theory</p>
                     </div>
-                    <div class="grid-item">
-                        <img src="assets/images/ELSEVIERLogo.png" alt="Elsevier Logo">
-                        <p>Journal of Approximation Theory, Elsevier</p>
+                    <div class="logo-item"><img src="assets/images/SpringerLogo.png" alt="Springer Logo">
+                        <p>Banach Journal of Mathematical Analysis</p>
                     </div>
-                    <div class="grid-item">
-                        <img src="assets/images/SpringerLogo.png" alt="Springer Logo">
-                        <p>Banach Journal of
-                            Mathematical Analysis,
-                            Springer </p>
-                    </div>
-                    <div class="grid-item">
-                        <img src="assets/images/RICAMLogo.png" alt="RICAM Logo">
-                        <p>Electronic Transaction
-                            Numerical Analysis </p>
+                    <div class="logo-item"><img src="assets/images/RICAMLogo.png" alt="RICAM Logo">
+                        <p>Electronic Transactions on Numerical Analysis (ETNA)</p>
                     </div>
                 </div>
-            </main>
+                <!-- </main> -->
+            </div>
         </section>
-
+        </div>
         <section class="section-with-sidebar">
             <aside class="sidebar"></aside>
             <main class="section-content">
@@ -817,98 +894,83 @@
         </section>
 
 
-        <section class="section">
-            <main class="section-content">
+
+        <section id="skills" class="section">
+            <div class="content-section">
                 <div class="section-header">
                     <div class="section-header-icon">
                         <img src="assets/icons/CertificateIcon.png" alt="Certificate Icon">
                     </div>
-                    <h1>Other Certificates and Experiences</h1>
+                    <h1>Skills & Certifications</h1>
                 </div>
-                <br>
-                <div class="grid">
-                    <div class="grid-item">
-                        <img src="assets/images/TOEFLLogo.png" alt="TOEFL logo">
-                        <p>TOEFL certificate of
-                            the Language Center -
-                            Cairo University in</p>
+                <div class="logo-grid skills-grid">
+                    <div class="logo-item"><img src="assets/images/TOEFLLogo.png" alt="TOEFL logo">
+                        <p>TOEFL (Cairo University)</p>
                     </div>
-                    <div class="grid-item">
-                        <img src="assets/images/ICDLLogo.png" alt="ICDL logo">
-                        <p>ICDL certificate from
-                            UNESCO in 2003</p>
+                    <div class="logo-item"><img src="assets/images/ICDLLogo.png" alt="ICDL logo">
+                        <p>ICDL (UNESCO, 2003)</p>
                     </div>
-                    <div class="grid-item">
-                        <img src="assets/images/SPSSLogo.png" alt="SPSS logo">
-                        <p>Certificate in SPSS
-                            from the Institute of
-                            Statistics - Cairo</p>
+                    <div class="logo-item"><img src="assets/images/SPSSLogo.png" alt="SPSS logo">
+                        <p>SPSS (Institute of Statistics, Cairo)</p>
                     </div>
-                    <div class="grid-item">
-                        <img src="assets/images/BBLogo.png" alt="BlackBoard Logo">
-                        <p>Using Blackboard
-                            efficiently 2015 - Now</p>
+                    <div class="logo-item"><img src="assets/images/BBLogo.png" alt="BlackBoard Logo">
+                        <p>Blackboard LMS (Proficient User)</p>
                     </div>
-                    <div class="grid-item">
-                        <img src="assets/images/MathematicaLogo.png" alt="Mathematica Logo">
-                        <p>Using Mathematica
-                            program efficiently
-                            (2003 - Now)</p>
+                    <div class="logo-item"><img src="assets/images/MathematicaLogo.png" alt="Mathematica Logo">
+                        <p>Wolfram Mathematica (Expert User)</p>
                     </div>
-                    <div class="grid-item">
-                        <img src="assets/images/LATEXLogo.png" alt="LATEX Logo">
-                        <p>Using Latex program
-                            efficiently (2001 - Now)</p>
+                    <div class="logo-item"><img src="assets/images/LATEXLogo.png" alt="LaTeX Logo">
+                        <p>LaTeX (Expert User)</p>
                     </div>
                 </div>
-            </main>
+            </div>
         </section>
-
-        <section class="section">
-            <main class="section-content">
+        <section id="supervision-experience" class="section">
+            <div class="content-section">
                 <div class="section-header">
                     <div class="section-header-icon">
                         <img src="assets/icons/SupervisionIcon.png" alt="Icon">
                     </div>
                     <h1>Supervision Experience</h1>
                 </div>
-
-                <table>
-                    <thead>
-                        <tr>
-                            <td>Student</td>
-                            <td>Title</td>
-                            <td>University</td>
-                            <td>Degree</td>
-                            <td>Period</td>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Zamlah ALhamami</td>
-                            <td>Accelerating the Convergence of
-                                Multidimensional Sampling Expansions in the
-                                Linear Canonical Transform Domain</td>
-                            <td>Najran, KSA</td>
-                            <td>M. Sc.</td>
-                            <td>2024 - now</td>
-                        </tr>
-                        <tr>
-                            <td>Somaia Alhazmi </td>
-                            <td>Gaussian Regularized Two-Dimensional
-                                Periodic Nonuniform Sampling Series</td>
-                            <td>Najran, KSA</td>
-                            <td>M. Sc.</td>
-                            <td>2023 - now</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </main>
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Student</th>
+                                <th>Title</th>
+                                <th>University</th>
+                                <th>Degree</th>
+                                <th>Period</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Zamlah ALhamami</td>
+                                <td>Accelerating the Convergence of
+                                    Multidimensional Sampling Expansions in the
+                                    Linear Canonical Transform Domain</td>
+                                <td>Najran, KSA</td>
+                                <td>M. Sc.</td>
+                                <td>2024 - now</td>
+                            </tr>
+                            <tr>
+                                <td>Somaia Alhazmi </td>
+                                <td>Gaussian Regularized Two-Dimensional
+                                    Periodic Nonuniform Sampling Series</td>
+                                <td>Najran, KSA</td>
+                                <td>M. Sc.</td>
+                                <td>2023 - now</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
         </section>
 
 
-        <section class="section">
-            <main class="section-content">
+        <section id="committees" class="section">
+            <div class="content-section">
                 <div class="section-header">
                     <div class="section-header-icon">
                         <img src="assets/icons/committieIcon.png" alt="Icon">
@@ -940,27 +1002,27 @@
                             January 2014 - Present</div>
                     </div>
                 </div>
-            </main>
+            </div>
         </section>
 
 
-        <section class="section">
-            <main class="section-content">
+        <section id="thesis-committees" class="section">
+            <div class="content-section">
                 <div class="section-header">
                     <div class="section-header-icon">
                         <img src="assets/icons/CommitteesIcon.png" alt="Icon">
                     </div>
                     <h1>Thesis Examination Committees</h1>
                 </div>
-
+                <div class="table-container">
                 <table>
                     <thead>
                         <tr>
-                            <td>Type</td>
-                            <td>Student</td>
-                            <td>Title</td>
-                            <td>University</td>
-                            <td>Date</td>
+                            <th>Type</th>
+                            <th>Student</th>
+                            <th>Title</th>
+                            <th>University</th>
+                            <th>Date</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -985,76 +1047,75 @@
                         </tr>
                     </tbody>
                 </table>
-            </main>
+                </div>
+            </div>
         </section>
 
         <section class="section">
-            <main class="section-content">
+            <div class="content-section">
                 <div class="section-header">
                     <div class="section-header-icon">
                         <img src="assets/icons/BooksIcon.png" alt="Icon">
                     </div>
                     <h1>Teaching Experience</h1>
                 </div>
-
-                <table style="width: 95%">
+                <div class="table-container">
+                <table>
                     <thead>
                         <tr>
-                            <td>Undergraduate courses</td>
-                            <td>Postgraduate courses </td>
+                            <th>Undergraduate courses</th>
+                            <th>Postgraduate courses </th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <td>
-                                <ul>
-                                    <li>Real Analysis (1), (2)</li>
-                                    <li>Functional Analysis</li>
-                                    <li>Complex Analysis</li>
-                                </ul>
+                                <p>Real Analysis (1), (2)</p>
+                                <p>Functional Analysis</p>
+                                <p>Complex Analysis</p>
+
                             </td>
                             <td>
-                                <ul>
-                                    <li>Advanced Functional Analysis</li>
-                                    <li>Advanced Complex Analysis</li>
-                                    <li>Selected Topics in Analysis</li>
-                                </ul>
+                                <p>Advanced Functional Analysis</p>
+                                <p>Advanced Complex Analysis</p>
+                                <p>Selected Topics in Analysis</p>
+
                             </td>
                         </tr>
                     </tbody>
                 </table>
-            </main>
+                </div>
+            </div>
         </section>
 
 
         <section class="section">
-            <main class="section-content">
+            <div class="content-section">
                 <div class="section-header">
                     <div class="section-header-icon">
                         <img src="assets/icons/referenceIcon.png" alt="Icon">
                     </div>
                     <h1>Reference</h1>
                 </div>
-            </main>
-            <div class="cards">
-                <div class="card">
-                    <div>Professor Mahmoud H. Annaby</div>
-                    <br>
-                    <div>-	Department of Mathematics, Faculty of Science, Cairo University, Giza, Egypt</div>
-                    <br>
-                    <div style="display:flex;flex-wrap: wrap;justify-content:space-between">
-                        <div class="info-item"><img src="assets/icons/mailIcon.png"> mhannaby@yahoo.com</div>
-                        <div class="info-item"><img src="assets/icons/googleScholarIcon.png"> Google Scholar page</div>
+                <p>Available upon request. Key contacts include:</p>
+                <div class="reference-cards">
+                    <div class="card">
+                        <h4>Professor Mahmoud H. Annaby</h4>
+                        <p>Department of Mathematics, Faculty of Science, Cairo University, Giza, Egypt</p>
+                        <div class="card-contact">
+                            <span class="info-item"><i class="fas fa-envelope fa-fw icon"></i> <a
+                                    href="mailto:mhannaby@yahoo.com">mhannaby@yahoo.com</a></span>
+                            <span class="info-item"><i class="fab fa-google fa-fw icon"></i> Google Scholar</span>
+                        </div>
                     </div>
-                </div>
-                <div class="card">
-                    <div>Professor Jürgen Prestin</div>
-                    <br>
-                    <div>-	Institute of Mathematics, Lübeck University, Lübeck, Germany</div>
-                    <br>
-                    <div style="display:flex;flex-wrap: wrap;justify-content:space-between">
-                        <div class="info-item"><img src="assets/icons/mailIcon.png">prestin@math.uni-luebeck.de</div>
-                        <div class="info-item"><img src="assets/icons/googleScholarIcon.png"> Google Scholar page</div>
+                    <div class="card">
+                        <h4>Professor Jürgen Prestin</h4>
+                        <p>Institute of Mathematics, University of Lübeck, Lübeck, Germany</p>
+                        <div class="card-contact">
+                            <span class="info-item"><i class="fas fa-envelope fa-fw icon"></i> <a
+                                    href="mailto:prestin@math.uni-luebeck.de">prestin@math.uni-luebeck.de</a></span>
+                            <span class="info-item"><i class="fab fa-google fa-fw icon"></i> Google Scholar</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -1062,23 +1123,8 @@
         <!-- <footer>
         <p>&copy; 2023 Dr. Rashad Asharabi Profile</p>
     </footer> -->
-        <script>
-            // Add this script at the end of your body tag
-            document.addEventListener('DOMContentLoaded', function () {
-                const timeline = document.querySelector('.timeline');
-                const containers = document.querySelectorAll('.timeline-container');
+        <script src="src/js/script.js">
 
-                if (containers.length > 0) {
-                    // Get the last timeline container
-                    const lastContainer = containers[containers.length - 1];
-
-                    // Calculate the position of the circle in the last container
-                    const lastCirclePosition = lastContainer.offsetTop + 4; // 15px is where the circle is positioned
-
-                    // Set the height of the timeline line to reach exactly this point
-                    timeline.style.setProperty('--timeline-height', `${lastCirclePosition}px`);
-                }
-            });
         </script>
 </body>
 
