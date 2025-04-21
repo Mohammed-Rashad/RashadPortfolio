@@ -89,11 +89,8 @@ const navbar = document.getElementById('navbar');
 const navbarPosition = navbar.getBoundingClientRect().top + window.scrollY;
 const navbarLinks = document.getElementsByClassName("nav-link");
 const logoContainer = document.getElementById("logo-container");
-console.log(logoContainer);
-let isSticky = false;
 window.addEventListener('scroll', function() {
   // If we've scrolled past the original position of the navbar
-  console.log(window.scrollY , navbarPosition);
   if (window.scrollY >= navbarPosition && !isSticky) {
     isSticky = true;
     navbar.classList.add('sticky');
